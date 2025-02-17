@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Anatomy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <style>
+        body {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 10px;
+            color: black;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 40px;
+            color: #004AAD;
+            text-align: center;
+            text-shadow: 0 0 10px #004AAD;
+            margin: 20px 0;
+        }
+        h2 {
+            font-size: 22px;
+            color: #FEBD58;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #004AAD;
+            padding: 10px 0;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            font-size: 12px;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #FEBD58;
+            color: black;
+            border-radius: 5px;
+        }
+        .navbar .button-preorder {
+            background-color: #FEBD58;
+            color: black;
+            border-radius: 5px;
+        }
+        .navbar .button-preorder:hover {
+            background-color: #FFD77A;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #004AAD;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        footer div {
+            margin-bottom: 10px;
+        }
+        footer div a {
+            color: white;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Press Start Cards</h1></br>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="cards.htm">Cards</a>
+        <a href="form.htm">Contact</a>
+        <a href="#" class="button-preorder">Pre-order now !</a>
+    </nav>
+
+<h2>About the cards</h2></br>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="img/Card.png" alt="Card Anatomy">
+        </div>
+    </div>
+    <footer>
+        <div><a href="form.htm">Contact</a></div>
+        <div>
+            Legal Mentions<br>Term of use<br>Privacy Policy
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
