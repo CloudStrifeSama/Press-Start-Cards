@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press Start Cards</title>
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+        body {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 12px;
+            color: black;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 40px;
+            color: #004AAD;
+            text-align: center;
+            text-shadow: 0 0 10px #004AAD;
+            margin: 20px 0;
+        }
+        h2 {
+            font-size: 22px;
+            color: #FEBD58;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #004AAD;
+            padding: 10px 0;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            font-size: 12px;
+            transition: background-color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #FEBD58;
+            color: black;
+            border-radius: 5px;
+        }
+        .navbar .button-preorder {
+            background-color: #FEBD58;
+            color: black;
+            border-radius: 5px;
+        }
+        .navbar .button-preorder:hover {
+            background-color: #FFD77A;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .button {
+            display: block;
+            width: fit-content;
+            padding: 10px 20px;
+            background-color: #FEBD58;
+            color: black;
+            text-align: center;
+            margin: 20px auto;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #FFD77A;
+        }
+        .carousel-container {
+            position: relative;
+            max-width: 100%;
+            overflow: hidden;
+            padding-bottom: 20px;
+        }
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 10px;
+        }
+        .carousel::-webkit-scrollbar {
+            display: none;
+        }
+        .carousel .card {
+            flex: 0 0 auto;
+            width: 186px;
+            height: 260px;
+            margin: 0 5px;
+            perspective: 1000px;
+            scroll-snap-align: start;
+            position: relative;
+            overflow: hidden;
+        }
+        .carousel .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            backface-visibility: hidden;
+            transition: transform 0.6s;
+        }
+        .carousel .card img.back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: rotateY(180deg);
+        }
+        .carousel .card:hover img.front {
+            transform: rotateY(180deg);
+        }
+        .carousel .card:hover img.back {
+            transform: rotateY(0deg);
+        }
+        .slick-dots {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            display: flex !important;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        footer {
+            background-color: #004AAD;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        footer div {
+            margin-bottom: 10px;
+        }
+        footer div a {
+            color: white;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+        }
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 24px;
+        }
+        @media (min-width: 768px) {
+            .row {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .carousel-container {
+                height: 320px;
+            }
+        }
+        @media (min-width: 1024px) {
+            .container {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Press Start Cards</h1>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="cards.htm">Cards</a>
+        <a href="form.htm">Contact</a>
+        <a href="#" class="button-preorder">Pre-order now !</a>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <h2>Gaming Press review in a booster</h2></br></br>
+                <p>Press Start Card is the new way to discover video game press reviews!</br> Buy a mysterious card boosterpack, open it, then discover 8 reviews of retro video games.</p></br>
+                <a href="#" class="button">Pre-Order Now !</a>
+            </div>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel slick-slider">
+                <div class="card">
+    <img src="img/SF2 Recto.jpg" alt="SF2 Recto" class="front">
+    <img src="img/SF2 verso.jpg" alt="SF2 verso" class="back">
+</div>
+<div class="card">
+    <img src="img/Shining Force 2 Recto.jpg" alt="Shining Force 2 Recto" class="front">
+    <img src="img/Shining Force 2 Verso.jpg" alt="Shining Force 2 Verso" class="back">
+</div>
+<div class="card">
+    <img src="img/Shining Force recto.jpg" alt="Shining Force recto" class="front">
+    <img src="img/Shining Force verso.jpg" alt="Shining Force verso" class="back">
+</div>
+<div class="card">
+    <img src="img/Shinobi III Recto.jpg" alt="Shinobi III Recto" class="front">
+    <img src="img/Shinobi III Verso.jpg" alt="Shinobi III Verso" class="back">
+</div>
+<div class="card">
+    <img src="img/Soleil Recto.jpg" alt="Soleil Recto" class="front">
+    <img src="img/Soleil Verso.jpg" alt="Soleil Verso" class="back">
+</div>
+<div class="card">
+    <img src="img/Sonic 2 Recto.jpg" alt="Sonic 2 Recto" class="front">
+    <img src="img/Sonic 2 Verso.jpg" alt="Sonic 2 Verso" class="back">
+</div>
+<div class="card">
+    <img src="img/Sonic Recto.jpg" alt="Sonic Recto" class="front">
+    <img src="img/Sonic Verso.jpg" alt="Sonic Verso" class="back">
+</div>
+<div class="card">
+    <img src="img/Streets of rage recto.jpg" alt="Streets of rage recto" class="front">
+    <img src="img/Streets of rage verso.jpg" alt="Streets of rage verso" class="back">
+</div>
+<div class="card">
+    <img src="img/Thunder Force IV  Recto.jpg" alt="Thunder Force IV  Recto" class="front">
+    <img src="img/Thunder Force IV Verso.jpg" alt="Thunder Force IV Verso" class="back">
+</div>
+<div class="card">
+    <img src="img/ToeJam & Earl recto.jpg" alt="ToeJam & Earl recto" class="front">
+    <img src="img/ToeJam & Earl verso.jpg" alt="ToeJam & Earl verso" class="back">
+</div>
+<div class="card">
+    <img src="img/Vectorman Recto.jpg" alt="Vectorman Recto" class="front">
+    <img src="img/Vectorman verso.jpg" alt="Vectorman verso" class="back">
+</div>
+<div class="card">
+    <img src="img/Virtua Racing Recto.jpg" alt="Virtua Racing Recto" class="front">
+    <img src="img/Virtua Racing  Verso.jpg" alt="Virtua Racing  Verso" class="back">
+</div>
+<div class="card">
+    <img src="img/Alien Soldier  recto.jpg" alt="Alien Soldier  recto" class="front">
+    <img src="img/Alien Soldier verso.jpg" alt="Alien Soldier verso" class="back">
+</div>
+<div class="card">
+    <img src="img/Another World  recto.jpg" alt="Another World  recto" class="front">
+    <img src="img/Another World  verso.jpg" alt="Another World  verso" class="back">
+</div>
+<div class="card">
+    <img src="img/Comix Zone  recto.jpg" alt="Comix Zone  recto" class="front">
+    <img src="img/Comix Zone  verso.jpg" alt="Comix Zone  verso" class="back">
+</div>
+<div class="card">
+    <img src="img/Cool Spot  recto.jpg" alt="Cool Spot  recto" class="front">
+    <img src="img/Cool Spot  verso.jpg" alt="Cool Spot  verso" class="back">
+</div>
+<div class="card">
+    <img src="img/Dune 2  recto.jpg" alt="Dune 2  recto" class="front">
+    <img src="img/Dune 2  verso.jpg" alt="Dune 2  verso" class="back">
+</div>
+<div class="card">
+    <img src="img/Earthworm Jim recto.jpg" alt="Earthworm Jim recto" class="front">
+    <img src="img/Earthworm Jim verso.jpg" alt="Earthworm Jim verso" class="back">
+</div>
+<div class="card">
+    <img src="img/Ecco recto.jpg" alt="Ecco recto" class="front">
+    <img src="img/Ecco verso.jpg" alt="Ecco verso" class="back">
+</div>
+<div class="card">
+    <img src="img/Flashback recto.jpg" alt="Flashback recto" class="front">
+    <img src="img/Flashback verso.jpg" alt="Flashback verso" class="back">
+</div>
+<div class="card">
+    <img src="img/Gunstar Heroes recto.jpg" alt="Gunstar Heroes recto" class="front">
+    <img src="img/Gunstar Heroes verso.jpg" alt="Gunstar Heroes verso" class="back">
+</div>
+<div class="card">
+    <img src="img/Kid Chameleon  Recto.jpg" alt="Kid Chameleon  Recto" class="front">
+    <img src="img/Kid Chameleon  Verso.jpg" alt="Kid Chameleon  Verso" class="back">
+</div>
+<div class="card">
+    <img src="img/La Légende de Thor  Recto.jpg" alt="La Légende de Thor  Recto" class="front">
+    <img src="img/La Légende de Thor  Verso.jpg" alt="La Légende de Thor  Verso" class="back">
+</div>
+<div class="card">
+    <img src="img/Landstalker Recto.jpg" alt="Landstalker Recto" class="front">
+    <img src="img/Landstalker Verso.jpg" alt="Landstalker Verso" class="back">
+</div>
+<div class="card">
+    <img src="img/Light Crusader  Recto.jpg" alt="Light Crusader  Recto" class="front">
+    <img src="img/Light Crusader  Verso.jpg" alt="Light Crusader  Verso" class="back">
+</div>
+<div class="card">
+    <img src="img/Ristar  Recto.jpg" alt="Ristar  Recto" class="front">
+    <img src="img/Ristar  Verso.jpg" alt="Ristar  Verso" class="back">
+</div>
+
+                <!-- Add more image pairs as needed -->
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div><a href="form.htm">Contact</a></div>
+        <div>
+                 <a href="termofuse.html">Term of Use</a><br>
+        <a href="privacypolicy.html">Privacy Policy</a>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slick-slider').slick({
+                infinite: true,
+                slidesToShow: 9,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>
