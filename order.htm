@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Press Start Cards : Retro gaming card reviews</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Press Start Cards</h1>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="cards.htm">Cards</a>
+        <a href="form.htm">Contact</a>
+        <a href="oder.htm" class="button-preorder">Pre-order now !</a>
+    </nav>
+    <div class="container">
+	<h2>Pre-Order Campaign</h2>
+	<center>Hey there, gamer friend!</br>
+	We're preparing all these awesome cards for printing !</br> 
+	We will ship them all over Europe (including the UK and Switzerland).</br>
+	Cheers, and enjoy your games!</br></br>
+	 <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1QtsV3R0kGqqsS2MZMumD40l"
+  publishable-key="pk_test_51QtrfHR0kGqqsS2MvucmMrAMfpiu323TcPs3WPr6Pu4w1taZQiH3f7lZiJcW2eFGKvkjTObRMJJfyK8JHiWNWrpQ00F8cMqZHJ"
+>
+</stripe-buy-button>
+<script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1Qtsf7R0kGqqsS2MBCOrMRIL"
+  publishable-key="pk_test_51QtrfHR0kGqqsS2MvucmMrAMfpiu323TcPs3WPr6Pu4w1taZQiH3f7lZiJcW2eFGKvkjTObRMJJfyK8JHiWNWrpQ00F8cMqZHJ"
+>
+</stripe-buy-button></center>
+</div>
+</div>
+</body>
+  <footer>
+        <div><a href="form.htm">Contact</a></div>
+        <div>
+                 <a href="termofuse.htm">Term of Use</a><br>
+        <a href="privacypolicy.htm">Privacy Policy</a>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+		</body>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slick-slider').slick({
+                infinite: true,
+                slidesToShow: 9,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</html>
