@@ -3,125 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Press Start 2P', cursive;
-            font-size: 10px;
-            color: black;
-        }
-        h1 {
-            font-size: 40px;
-            color: #004AAD;
-            text-align: center;
-            text-shadow: 0 0 10px #004AAD;
-        }
-         h2 {
-            font-size: 22px;
-            color: #FEBD58;
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: center;
-            background-color: #004AAD;
-            padding: 10px 0;
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            padding: 10px 20px;
-            font-size: 12px;
-            transition: background-color 0.3s;
-        }
-        .navbar a:hover {
-            background-color: #FEBD58;
-            color: black;
-            border-radius: 5px;
-        }
-        .navbar .button-preorder {
-            background-color: #FEBD58;
-            color: black;
-            border-radius: 5px;
-        }
-        .navbar .button-preorder:hover {
-            background-color: #FFD77A;
-        }
-        .container {
-            width: 70%;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #f7f7f7;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            color: #004AAD;
-        }
-        .form-group input, .form-group textarea, .form-group select {
-            width: 100%;
-            padding: 10px;
-            font-size: 10px;
-            font-family: 'Press Start 2P', cursive;
-            border: 1px solid #004AAD;
-            border-radius: 5px;
-        }
-        .form-group textarea {
-            resize: vertical;
-        }
-        .button {
-            display: block;
-            width: fit-content;
-            padding: 10px 20px;
-            background-color: #FEBD58;
-            color: black;
-            text-align: center;
-            margin: 20px auto;
-            text-decoration: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 20px;
-            transition: background-color 0.3s;
-        }
-        .button:hover {
-            background-color: #FFD77A;
-        }
-        footer {
-            background-color: #004AAD;
-            padding: 20px;
-            display: flex;
-            justify-content: space-around;
-            color: white;
-        }
-        footer div {
-            text-align: center;
-        }
-        footer div a {
-            display: block;
-            color: white;
-            margin: 5px 0;
-        }
-        .social-icons {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .social-icons a {
-            color: white;
-            margin: 0 10px;
-            font-size: 24px;
-        }
-    </style>
+    <title>Contact us</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <h1>Press Start Cards</h1></br>
@@ -134,37 +17,37 @@
 
     <div class="container">
         <h2>Contact Form</h2>
-        <form id="contactForm">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="company">Company</label>
-                <input type="text" id="company" name="company" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="topic">Topic</label>
-                <input type="text" id="topic" name="topic" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Your message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <div class="form-group">
-                <button type="submit" class="button">Submit</button>
-            </div>
-        </form>
+    <form id="contactForm" action="send_mail.php" method="POST">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="topic">Topic</label>
+            <input type="text" id="topic" name="topic" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="button">Submit</button>
+        </div>
+    </form>
     </div>
     <footer>
         <div><a href="form.htm">Contact</a></div>
         <div>
-                 <a href="termofuse.html">Term of Use</a><br>
-        <a href="privacypolicy.html">Privacy Policy</a>
+                 <a href="termofuse.htm">Term of Use</a><br>
+        <a href="privacypolicy.htm">Privacy Policy</a>
         </div>
         <div class="social-icons">
             <a href="#"><i class="fab fa-facebook"></i></a>
@@ -175,25 +58,25 @@
         </div>
     </footer>
     <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const formData = new FormData(this);
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const formData = new FormData(this);
 
-            fetch('send_mail.php', {
-                method: 'POST',
-                body: formData
-            }).then(response => {
-                if (response.ok) {
-                    alert('Message sent successfully!');
-                    this.reset();
-                } else {
-                    alert('Error sending message.');
-                }
-            }).catch(error => {
-                console.error('Error:', error);
+        fetch('send_mail.php', {
+            method: 'POST',
+            body: formData
+        }).then(response => {
+            if (response.ok) {
+                alert('Message sent successfully!');
+                this.reset();
+            } else {
                 alert('Error sending message.');
-            });
+            }
+        }).catch(error => {
+            console.error('Error:', error);
+            alert('Error sending message.');
         });
-    </script>
+    });
+</script>
 </body>
 </html>
