@@ -1,9 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Chargement du header
     fetch('header.html')
-        .then(response => response.text())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok: ' + response.statusText);
+            }
+            return response.text();
+        })
         .then(data => {
-            const headerElement = document.querySelector('header');
+            const headerElement = document.querySelector('head');
             if (headerElement) {
                 headerElement.innerHTML = data;
             } else {
@@ -14,7 +19,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Chargement du footer
     fetch('footer.html')
-        .then(response => response.text())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok: ' + response.statusText);
+            }
+            return response.text();
+        })
         .then(data => {
             const footerElement = document.querySelector('footer');
             if (footerElement) {
