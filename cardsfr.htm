@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez notre collection de boosters mystères remplis de critiques exclusives sur le rétro gaming ! Chaque pack contient des critiques de jeux rétro - collectionnez-les tous et revivez les classiques !" />
+    <title>Toutes les cartes de critiques de jeux</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        console.log("Le script est bien chargé !");
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // Charger le header
+            fetch('headerfr.html')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erreur lors du chargement du header');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    console.log("Header chargé avec succès !");
+                    document.getElementById('header').innerHTML = data;
+                })
+                .catch(error => console.error(error));
+
+            // Charger le footer
+            fetch('footerfr.html')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erreur lors du chargement du footer');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    console.log("Footer chargé avec succès !");
+                    document.getElementById('footer').innerHTML = data;
+                })
+                .catch(error => console.error(error));
+        });
+    </script>
+</head>
+<body>
+<div id="header"></div>
+</div>
+<h2>À propos des cartes</h2>
+</div>
+<div class="container">
+<Hey ! Découvrez le premier magazine de critiques de jeux rétro dans un booster !</br></br>
+Vous trouverez 30 cartes de critiques rétro chaque mois sur des jeux vidéo entre 1989 et 2009.</br></br>
+Toutes les cartes sont disponibles en anglais et ou en français (tout dépend du site depuis lequel vous commandez)</br></br>
+Nous espérons que vous allez adorer ce nouveau format !</br></br> 
+  
+Voici la collection complète des cartes pour vous aider a suivre votre collection.</div>
+</div>
+</div>
+<h2>Collection de cartes</h2></br>
+<h3>Première tirage avril 2025</h3>
+<!-- Ajoutez cette section pour la grille d'images -->
+<div class="image-container">
+    <img src="img/cards/streets of rage recto.jpg" alt="Carte de critique de Streets of Rage" class="front">
+    <img src="img/cards/super monaco gp recto.jpg" alt="Carte de critique de Super Monaco GP" class="front">
+    <img src="img/cards/thunder force iv recto.jpg" alt="Carte de critique de Thunder Force IV" class="front">
+    <img src="img/cards/toejam & earl recto.jpg" alt="Carte de critique de ToeJam & Earl" class="front">
+    <img src="img/cards/vectorman recto.jpg" alt="Carte de critique de Vectorman" class="front">
+    <img src="img/cards/virtua racing recto.jpg" alt="Carte de critique de Virtua Racing" class="front">
+    <img src="img/cards/alien soldier recto.jpg" alt="Carte de critique de Alien Soldier" class="front">
+    <img src="img/cards/another world recto.jpg" alt="Carte de critique de Another World" class="front">
+    <img src="img/cards/comix zone recto.jpg" alt="Carte de critique de Comix Zone" class="front">
+    <img src="img/cards/cool spot recto.jpg" alt="Carte de critique de Cool Spot" class="front">
+    <img src="img/cards/dune 2 recto.jpg" alt="Carte de critique de Dune 2" class="front">
+    <img src="img/cards/earthworm jim recto.jpg" alt="Carte de critique de Earthworm Jim" class="front">
+    <img src="img/cards/ecco recto.jpg" alt="Carte de critique de Ecco" class="front">
+    <img src="img/cards/flashback recto.jpg" alt="Carte de critique de Flashback" class="front">
+    <img src="img/cards/gunstar heroes recto.jpg" alt="Carte de critique de Gunstar Heroes" class="front">
+    <img src="img/cards/kid chameleon recto.jpg" alt="Carte de critique de Kid Chameleon" class="front">
+    <img src="img/cards/la légende de thor recto.jpg" alt="Carte de critique de La Légende de Thor" class="front">
+    <img src="img/cards/landstalker recto.jpg" alt="Carte de critique de Landstalker" class="front">
+    <img src="img/cards/light crusader recto.jpg" alt="Carte de critique de Light Crusader" class="front">
+    <img src="img/cards/phantasy star iv recto.jpg" alt="Carte de critique de Phantasy Star IV" class="front">
+    <img src="img/cards/ristar recto.jpg" alt="Carte de critique de Ristar" class="front">
+    <img src="img/cards/rocket knight adventures recto.jpg" alt="Carte de critique de Rocket Knight Adventures" class="front">
+    <img src="img/cards/sf2 recto.jpg" alt="Carte de critique de SF2" class="front">
+    <img src="img/cards/shining force 2 recto.jpg" alt="Carte de critique de Shining Force 2" class="front">
+    <img src="img/cards/shining force recto.jpg" alt="Carte de critique de Shining Force" class="front">
+    <img src="img/cards/shinobi iii recto.jpg" alt="Carte de critique de Shinobi III" class="front">
+    <img src="img/cards/soleil recto.jpg" alt="Carte de critique de Soleil" class="front">
+    <img src="img/cards/sonic 2 recto.jpg" alt="Carte de critique de Sonic 2" class="front">
+    <img src="img/cards/sonic recto.jpg" alt="Carte de critique de Sonic" class="front">
+    <!-- Ajoutez plus d'images ici, jusqu'à 30 images -->
+</div>
+</div>
+</div>
+</body>
+<footer>
+   <div id="footer"></div>
+</footer>
+</html>
