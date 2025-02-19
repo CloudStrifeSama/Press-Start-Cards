@@ -1,3 +1,4 @@
+<footer>
     <div><a href="form.htm">Contact</a></div>
     <div>
         <a href="term-of-use.htm">Term of Use</a><br>
@@ -10,3 +11,4 @@
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-linkedin"></i></a>
     </div>
+<footer>
