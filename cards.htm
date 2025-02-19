@@ -6,15 +6,42 @@
 	<meta name="description" content="Explore our collection of mystery booster review packs! Each pack contains exclusive retro gaming reviews—collect them all and relive the classics!" />
     <title>All the game review cards</title>
     <link rel="stylesheet" href="style.css" />
+		<script>
+        console.log("Le script est bien chargé !");
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // Charger le header
+            fetch('header.html')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erreur lors du chargement du header');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    console.log("Header chargé avec succès !");
+                    document.getElementById('header').innerHTML = data;
+                })
+                .catch(error => console.error(error));
+
+            // Charger le footer
+            fetch('footer.html')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erreur lors du chargement du footer');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    console.log("Footer chargé avec succès !");
+                    document.getElementById('footer').innerHTML = data;
+                })
+                .catch(error => console.error(error));
+        });
+    </script>
 </head>
 <body>
-    <h1>Press Start Cards</h1></br>
-    <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="cards.htm">Cards</a>
-        <a href="form.htm">Contact</a>
-        <a href="order.htm" class="button-preorder">Pre-order now !</a>
-    </nav>
+<div id="header"></div>
 </div>
 <h2>About the cards</h2>
 </div>
@@ -62,19 +89,8 @@ Here you can find the full cards collection to complete your collection.</div>
         </div>
 		</div>
 </div>
+	</body>
     <footer>
-        <div><a href="form.htm">Contact</a></div>
-        <div>
-        <a href="termofuse.htm">Term of Use</a><br>
-        <a href="privacypolicy.htm">Privacy Policy</a><br>
-        </div>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-tiktok"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-        </div>
+       <div id="footer"></div>
     </footer>
-</body>
 </html>
