@@ -274,7 +274,7 @@ footer div a {
         text-align: center;
     }
     .flag {
-    width: 24px; /* Ajuste la taille des drapeaux */
+    width: 12px; /* Ajuste la taille des drapeaux */
     height: auto;
     margin-left: 10px;
     vertical-align: middle;
