@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez les critiques de jeux rétro comme jamais auparavant ! Obtenez des boosters mystères remplis de critiques exclusives de jeux vidéo classiques. Commandez maintenant et commencez votre collection !" />
+    <title>Press Start Cards : Critiques de jeux rétro en cartes</title>
+    <link rel="stylesheet" href="style.css" />
+	<script>
+        console.log("Le script est bien chargé !");
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // Charger le header
+            fetch('header.html')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erreur lors du chargement du header');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    console.log("Header chargé avec succès !");
+                    document.getElementById('header').innerHTML = data;
+                })
+                .catch(error => console.error(error));
+
+            // Charger le footer
+            fetch('footer.html')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erreur lors du chargement du footer');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    console.log("Footer chargé avec succès !");
+                    document.getElementById('footer').innerHTML = data;
+                })
+                .catch(error => console.error(error));
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <h2>Critiques de jeux vidéo en booster</h2></br></br>
+                <p>Press Start Card est la nouvelle façon de découvrir les critiques de la presse vidéoludique !</br> Achetez un booster mystère, ouvrez-le, puis découvrez 8 critiques de jeux rétro.</p></br>
+                <a href="order.htm" class="button">Précommandez maintenant !</a>
+            </div>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel slick-slider">
+                <div class="card">
+                    <img src="img/cards/streets of rage recto.jpg" alt="Couverture de Streets of Rage" class="front">
+                    <img src="img/cards/streets of rage verso.jpg" alt="Critique de Streets of Rage" class="back">
+                </div>
+                <div class="card">
+                    <img src="img/cards/super monaco gp recto.jpg" alt="Couverture de Super Monaco GP" class="front">
+                    <img src="img/cards/super monaco gp verso.jpg" alt="Critique de Super Monaco GP" class="back">
+                </div>
+                <div class="card">
+                    <img src="img/cards/thunder force iv recto.jpg" alt="Couverture de Thunder Force IV" class="front">
+                    <img src="img/cards/thunder force iv verso.jpg" alt="Critique de Thunder Force IV" class="back">
+                </div>
+                <div class="card">
+                    <img src="img/cards/toejam & earl recto.jpg" alt="Couverture de ToeJam & Earl" class="front">
+                    <img src="img/cards/toejam & earl verso.jpg" alt="Critique de ToeJam & Earl" class="back">
+                </div>
+                <!-- Ajoutez d'autres images si nécessaire -->
+            </div>
+        </div>
+    </div>
+</body>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slick-slider').slick({
+                infinite: true,
+                slidesToShow: 9,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</html>
