@@ -11,7 +11,7 @@
         
         document.addEventListener('DOMContentLoaded', function() {
             // Charger le header
-            fetch('header.html')
+            fetch('headerfr.html')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Erreur lors du chargement du header');
@@ -25,7 +25,7 @@
                 .catch(error => console.error(error));
 
             // Charger le footer
-            fetch('footer.html')
+            fetch('footerfr.html')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Erreur lors du chargement du footer');
