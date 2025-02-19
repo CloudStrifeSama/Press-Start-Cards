@@ -25,6 +25,11 @@ h1 {
     text-shadow: 0 0 10px #004AAD;
     margin: 20px 0;
 }
+.navbar img {
+    max-height: 100%; /* Empêche les images d'être plus grandes que le texte */
+    display: inline-block; /* Garde l'alignement fluide */
+    vertical-align: middle;
+}
 
 h2 {
     font-size: 22px;
