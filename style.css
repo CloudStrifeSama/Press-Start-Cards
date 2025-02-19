@@ -25,22 +25,16 @@ h1 {
     text-shadow: 0 0 10px #004AAD;
     margin: 20px 0;
 }
-.navbar img {
-    max-height: 100%; /* Empêche les images d'être plus grandes que le texte */
-    display: inline-block; /* Garde l'alignement fluide */
-    vertical-align: middle;
-}
-
 h2 {
     font-size: 22px;
     color: #FEBD58;
     text-align: center;
     margin: 20px 0;
 }
-
 .navbar {
     display: flex;
     justify-content: center;
+    align-items: center; /* Assure un bon alignement vertical */
     background-color: #004AAD;
     padding: 10px 0;
 }
@@ -52,6 +46,8 @@ h2 {
     padding: 10px 20px;
     font-size: 12px;
     transition: background-color 0.3s;
+    display: flex; /* Permet d'aligner correctement les images */
+    align-items: center;
 }
 
 .navbar a:hover {
@@ -69,10 +65,12 @@ h2 {
 .navbar .button-preorder:hover {
     background-color: #FFD77A;
 }
+
+/* Styles des drapeaux */
 .navbar img {
-    max-height: 100%; /* Empêche les images d'être plus grandes que le texte */
-    display: inline-block; /* Garde l'alignement fluide */
-    vertical-align: middle;
+    height: 1em; /* Ajuste la hauteur des images à celle du texte */
+    vertical-align: middle; /* Aligne avec le texte */
+    margin-left: 10px; /* Espacement avec le texte */
 }
 
 .container {
