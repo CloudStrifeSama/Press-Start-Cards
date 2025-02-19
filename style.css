@@ -69,6 +69,11 @@ h2 {
 .navbar .button-preorder:hover {
     background-color: #FFD77A;
 }
+.navbar img {
+    max-height: 100%; /* Empêche les images d'être plus grandes que le texte */
+    display: inline-block; /* Garde l'alignement fluide */
+    vertical-align: middle;
+}
 
 .container {
     width: 90%;
