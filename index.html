@@ -6,15 +6,43 @@
 	<meta name="description" content="Discover retro gaming reviews like never before! Get mystery booster packs filled with exclusive reviews of classic video games. Order now and start your collection!" />
     <title>Press Start Cards : Retro gaming card reviews</title>
     <link rel="stylesheet" href="style.css" />
+	<script>
+        console.log("Le script est bien chargé !");
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // Charger le header
+            fetch('header.html')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erreur lors du chargement du header');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    console.log("Header chargé avec succès !");
+                    document.getElementById('header').innerHTML = data;
+                })
+                .catch(error => console.error(error));
+
+            // Charger le footer
+            fetch('footer.html')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erreur lors du chargement du footer');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    console.log("Footer chargé avec succès !");
+                    document.getElementById('footer').innerHTML = data;
+                })
+                .catch(error => console.error(error));
+        });
+    </script>
 </head>
 <body>
-    <h1>Press Start Cards</h1>
-    <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="cards.htm">Cards</a>
-        <a href="form.htm">Contact</a>
-        <a href="order.htm" class="button-preorder">Pre-order now !</a>
-    </nav>
+<!-- Le header et footer seront chargés ici -->
+    <div id="header"></div>
     <div class="container">
         <div class="row">
             <div class="column">
@@ -145,20 +173,10 @@
             </div>
         </div>
     </div>
+</body>
     <footer>
-        <div><a href="form.htm">Contact</a></div>
-        <div>
-                 <a href="termofuse.htm">Term of Use</a><br>
-        <a href="privacypolicy.htm">Privacy Policy</a>
-        </div>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-tiktok"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-        </div>
-		</body>
+    <!-- Contenu spécifique à la page -->
+    <div id="footer"></div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
