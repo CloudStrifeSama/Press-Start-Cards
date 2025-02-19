@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Commandez dès aujourd'hui vos boosters mystères de critiques de jeux rétros ! Livrées directement chez vous. Stock limité !" />
+    <title>Press Start Cards: Critiques de jeux rétro à la carte</title>
+    <link rel="stylesheet" href="style.css" />
+	<script>
+        console.log("Le script est bien chargé !");
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // Charger le header
+            fetch('headerfr.html')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erreur lors du chargement du header');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    console.log("Header chargé avec succès !");
+                    document.getElementById('header').innerHTML = data;
+                })
+                .catch(error => console.error(error));
+
+            // Charger le footer
+            fetch('footerfr.html')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erreur lors du chargement du footer');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    console.log("Footer chargé avec succès !");
+                    document.getElementById('footer').innerHTML = data;
+                })
+                .catch(error => console.error(error));
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+    <div class="container">
+	<h2>Campagne de pré-commande</h2>
+	<center>Hey salut amis gamer !</br>
+	Nous préparons actuellement toutes ces super cartes pour l'impression !</br> 
+    Nous les expédierons partout en Europe (y compris au Royaume-Uni et en Suisse).</br>
+    À bientôt et amuse-toi bien avec tes jeux !</br></br>
+	<script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1Qtt1KR0kGqqsS2MztWD4jQ7"
+  publishable-key="pk_test_51QtrfHR0kGqqsS2MvucmMrAMfpiu323TcPs3WPr6Pu4w1taZQiH3f7lZiJcW2eFGKvkjTObRMJJfyK8JHiWNWrpQ00F8cMqZHJ"
+>
+</stripe-buy-button>
+	 <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1QtsV3R0kGqqsS2MZMumD40l"
+  publishable-key="pk_test_51QtrfHR0kGqqsS2MvucmMrAMfpiu323TcPs3WPr6Pu4w1taZQiH3f7lZiJcW2eFGKvkjTObRMJJfyK8JHiWNWrpQ00F8cMqZHJ"
+>
+</stripe-buy-button>
+<script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1Qtsf7R0kGqqsS2MBCOrMRIL"
+  publishable-key="pk_test_51QtrfHR0kGqqsS2MvucmMrAMfpiu323TcPs3WPr6Pu4w1taZQiH3f7lZiJcW2eFGKvkjTObRMJJfyK8JHiWNWrpQ00F8cMqZHJ"
+>
+</stripe-buy-button>
+<script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<stripe-buy-button
+  buy-button-id="buy_btn_1Qtt2FR0kGqqsS2MeZSu90Nd"
+  publishable-key="pk_test_51QtrfHR0kGqqsS2MvucmMrAMfpiu323TcPs3WPr6Pu4w1taZQiH3f7lZiJcW2eFGKvkjTObRMJJfyK8JHiWNWrpQ00F8cMqZHJ"
+>
+</stripe-buy-button>
+</center>
+</div>
+</div>
+</body>
+  <footer>
+      <div id="footer"></div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slick-slider').slick({
+                infinite: true,
+                slidesToShow: 9,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</html>
