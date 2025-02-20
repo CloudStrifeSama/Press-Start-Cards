@@ -173,7 +173,6 @@ h2 {
     margin: 0;
     list-style: none;
 }
-
 /* Form styles */
 .form-group {
     margin-bottom: 15px;
@@ -195,11 +194,9 @@ h2 {
     border: 1px solid #004AAD;
     border-radius: 5px;
 }
-
 .form-group textarea {
     resize: vertical;
 }
-
 /* Footer styles */
 footer {
     background-color: #004AAD;
@@ -218,21 +215,6 @@ footer div {
 footer div a {
     color: white;
 }
-
-.social-icons {
-    display: flex;
-    justify-content: center;
-}
-
-.social-icons a {
-    color: white;
-    margin: 0 10px;
-    font-size: 24px;
-}
-footer div {
-    margin-bottom: 10px;
-}
-
 /* Ajoutez ce CSS pour le layout en colonnes sur les grands écrans */
 @media (min-width: 768px) {
     footer {
@@ -244,8 +226,8 @@ footer div {
     footer div {
         margin-bottom: 0;
         padding: 0 20px;
-    
-
+    }
+}
 /* Responsive styles */
 @media (min-width: 768px) {
     .row {
