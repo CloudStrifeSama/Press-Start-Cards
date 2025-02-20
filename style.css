@@ -23,12 +23,14 @@ h1 {
     text-shadow: 0 0 10px #004AAD;
     margin: 20px 0;
 }
+
 h2 {
     font-size: 22px;
     color: #FEBD58;
     text-align: center;
     margin: 20px 0;
 }
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -210,7 +212,7 @@ footer {
     text-align: center;
 }
 
-footer div {
+footer > div {
     margin-bottom: 10px;
 }
 
@@ -218,19 +220,30 @@ footer div a {
     color: white;
 }
 
-.social-icons {
-    display: flex;
-    justify-content: center;
-}
-
 .social-icons a {
-    color: white;
     margin: 0 10px;
     font-size: 24px;
 }
 
-/* Responsive styles */
+/* Layout en colonnes sur les grands écrans */
 @media (min-width: 768px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+    }
+
+    footer > div {
+        margin-bottom: 0;
+        padding: 0 20px;
+        flex: 1;
+    }
+
+    footer .social-icons {
+        display: flex;
+        justify-content: center;
+    }
+
     .row {
         flex-direction: row;
         justify-content: space-between;
@@ -246,6 +259,7 @@ footer div a {
         width: 80%;
     }
 }
+
 /* Pour les petits écrans (Mobile) */
 @media (max-width: 768px) {
     /* Navbar en colonne */
@@ -277,11 +291,11 @@ footer div a {
 
     /* Ajustement du footer pour mobile */
     footer {
-        display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+
     .flag {
         width: 12px; /* Ajuste la taille des drapeaux */
         height: auto;
