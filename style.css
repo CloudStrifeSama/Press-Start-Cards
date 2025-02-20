@@ -183,7 +183,6 @@ h2 {
     margin-bottom: 5px;
     color: #004AAD;
 }
-
 .form-group input,
 .form-group textarea,
 .form-group select {
@@ -198,6 +197,7 @@ h2 {
     resize: vertical;
 }
 /* Footer styles */
+/* Footer styles */
 footer {
     background-color: #004AAD;
     padding: 20px;
@@ -207,8 +207,7 @@ footer {
     color: white;
     text-align: center;
 }
-
-footer div {
+footer > div {
     margin-bottom: 10px;
 }
 
@@ -223,9 +222,15 @@ footer div a {
         text-align: left;
     }
 
-    footer div {
+    footer > div {
         margin-bottom: 0;
         padding: 0 20px;
+        flex: 1;
+    }
+
+    footer .social-icons {
+        display: flex;
+        justify-content: center;
     }
 }
 /* Responsive styles */
