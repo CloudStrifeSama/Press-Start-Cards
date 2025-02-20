@@ -200,7 +200,6 @@ h2 {
 .form-group textarea {
     resize: vertical;
 }
-
 /* Footer styles */
 footer {
     background-color: #004AAD;
@@ -213,19 +212,14 @@ footer {
 }
 
 footer > div {
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* Augmenté l'espacement vertical entre les éléments */
 }
 
 footer div a {
     color: white;
 }
 
-.social-icons a {
-    margin: 0 10px;
-    font-size: 24px;
-}
-
-/* Layout en colonnes sur les grands écrans */
+/* Ajoutez ce CSS pour le layout en colonnes sur les grands écrans */
 @media (min-width: 768px) {
     footer {
         flex-direction: row;
@@ -243,7 +237,126 @@ footer div a {
         display: flex;
         justify-content: center;
     }
+}
 
+/* Responsive styles */
+@media (min-width: 768px) {
+    .row {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .carousel-container {
+        height: 320px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        width: 80%;
+    }
+}
+
+/* Pour les petits écrans (Mobile) */
+@media (max-width: 768px) {
+    /* Navbar en colonne */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Centrer et ajuster la largeur du container */
+    .container {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Formulaire adapté aux petits écrans */
+    .form-group input,
+    .form-group textarea,
+    .form-group button {
+        width: 100%;
+        max-width: 100%; /* Assurer que les éléments ne dépassent pas de leur conteneur */
+        box-sizing: border-box; /* Inclure les bordures et les paddings dans la largeur */
+    }
+
+    /* Ajouter un peu d'espace entre les champs du formulaire */
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    /* Ajustement du footer pour mobile */
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .flag {
+        width: 12px; /* Ajuste la taille des drapeaux */
+        height: auto;
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+}
+
+/* Styles pour centrer les images et ajouter de l'espace */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espace entre les images */
+}
+
+.image-container img {
+    display: block;
+    margin: 10px; /* Espace autour de chaque image */
+    max-width: 100px; /* Taille maximale des images */
+}
+
+/* Footer styles */
+footer {
+    background-color: #004AAD;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+footer > div {
+    margin-bottom: 20px; /* Augmenté l'espacement vertical entre les éléments */
+}
+
+footer div a {
+    color: white;
+}
+
+/* Ajoutez ce CSS pour le layout en colonnes sur les grands écrans */
+@media (min-width: 768px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+    }
+
+    footer > div {
+        margin-bottom: 0;
+        padding: 0 20px;
+        flex: 1;
+    }
+
+    footer .social-icons {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
     .row {
         flex-direction: row;
         justify-content: space-between;
