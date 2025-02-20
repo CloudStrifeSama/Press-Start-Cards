@@ -29,7 +29,6 @@ h2 {
     text-align: center;
     margin: 20px 0;
 }
-/* Navbar */
 .navbar {
     display: flex;
     justify-content: center;
@@ -173,6 +172,7 @@ h2 {
     margin: 0;
     list-style: none;
 }
+
 /* Form styles */
 .form-group {
     margin-bottom: 15px;
@@ -183,6 +183,7 @@ h2 {
     margin-bottom: 5px;
     color: #004AAD;
 }
+
 .form-group input,
 .form-group textarea,
 .form-group select {
@@ -193,10 +194,11 @@ h2 {
     border: 1px solid #004AAD;
     border-radius: 5px;
 }
+
 .form-group textarea {
     resize: vertical;
 }
-/* Footer styles */
+
 /* Footer styles */
 footer {
     background-color: #004AAD;
@@ -207,32 +209,26 @@ footer {
     color: white;
     text-align: center;
 }
-footer > div {
+
+footer div {
     margin-bottom: 10px;
 }
 
 footer div a {
     color: white;
 }
-/* Ajoutez ce CSS pour le layout en colonnes sur les grands écrans */
-@media (min-width: 768px) {
-    footer {
-        flex-direction: row;
-        justify-content: space-around;
-        text-align: left;
-    }
 
-    footer > div {
-        margin-bottom: 0;
-        padding: 0 20px;
-        flex: 1;
-    }
-
-    footer .social-icons {
-        display: flex;
-        justify-content: center;
-    }
+.social-icons {
+    display: flex;
+    justify-content: center;
 }
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
 /* Responsive styles */
 @media (min-width: 768px) {
     .row {
