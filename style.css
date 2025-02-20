@@ -29,6 +29,7 @@ h2 {
     text-align: center;
     margin: 20px 0;
 }
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: center;
@@ -228,6 +229,22 @@ footer div a {
     margin: 0 10px;
     font-size: 24px;
 }
+footer div {
+    margin-bottom: 10px;
+}
+
+/* Ajoutez ce CSS pour le layout en colonnes sur les grands écrans */
+@media (min-width: 768px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: left;
+    }
+
+    footer div {
+        margin-bottom: 0;
+        padding: 0 20px;
+    
 
 /* Responsive styles */
 @media (min-width: 768px) {
