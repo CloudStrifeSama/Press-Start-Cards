@@ -4,38 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Découvrez des critiques de jeux rétro comme jamais auparavant ! Obtenez des boosters mystères remplis de critiques exclusives de jeux vidéo classiques. Commandez maintenant et commencez votre collection !" />
-    <title>Press Start Cards : Critiques de cartes de jeux rétro</title>
-    <!-- Le header et footer seront chargés ici -->
-    // Charger le header
-            fetch('headerfr.html')
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Erreur lors du chargement du header');
-                    }
-                    return response.text();
-                })
-                .then(data => {
-                    console.log("Header chargé avec succès !");
-                    document.getElementById('header').innerHTML = data;
-                })
-                .catch(error => console.error(error));
 
-// Charger le footer
-            fetch('footerfr.html')
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Erreur lors du chargement du footer');
-                    }
-                    return response.text();
-                })
-                .then(data => {
-                    console.log("Footer chargé avec succès !");
-                    document.getElementById('footer').innerHTML = data;
-                })
-                .catch(error => console.error(error));
-        });
-    </script>
-        <div id="header">
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch('header.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Erreur lors du chargement de headerfr.html');
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.head.insertAdjacentHTML('beforeend', data);
+                console.log("Header ajouté avec succès !");
+            })
+            .catch(error => console.error('Erreur de chargement du header:', error));
+    });
+</script>
 <body>
  <div class="container">
         <div class="row">
