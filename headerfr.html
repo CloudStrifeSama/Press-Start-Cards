@@ -1,4 +1,40 @@
-<h1>Press Start Cards</h1></br>
+<link rel="stylesheet" href="style.css" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon"> 
+// Charger le header
+            fetch('headerfr.html')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erreur lors du chargement du header');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    console.log("Header chargé avec succès !");
+                    document.getElementById('header').innerHTML = data;
+                })
+                .catch(error => console.error(error));
+
+// Charger le footer
+            fetch('footerfr.html')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erreur lors du chargement du footer');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    console.log("Footer chargé avec succès !");
+                    document.getElementById('footer').innerHTML = data;
+                })
+                .catch(error => console.error(error));
+        });
+    </script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKD89P8G"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</header>
 <nav class="navbar">
     <a href="index.html">Home</a>
     <a href="cardsfr.htm">Nos Cartes</a>
@@ -7,7 +43,3 @@
     <a href="gb.html"><img src="img/fr-flag.png" alt="Français" class="flag"></a>
     <a href="index.html"><img src="img/uk-flag.png" alt="English" class="flag"></a>
 </nav>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKD89P8G"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
