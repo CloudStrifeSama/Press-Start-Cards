@@ -236,17 +236,23 @@ footer div a {
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
 .reassurance-item {
     text-align: center;
     flex: 1;
     max-width: 200px;
 }
+
 .reassurance-item img {
-    width: 40px;
-    height: auto;
+    width: 100px;
+    height: 50px;
     margin-bottom: 5px;
 }
 
+.reassurance-item p {
+    font-size: 14px;
+    color: #004AAD;
+    margin: 0;
 /* Ajoutez ce CSS pour le layout en colonnes sur les grands écrans */
 @media (min-width: 768px) {
     footer {
