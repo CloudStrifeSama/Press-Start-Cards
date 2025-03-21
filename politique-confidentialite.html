@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez des critiques de jeux rétro comme jamais auparavant ! Obtenez des boosters mystères remplis de critiques exclusives de jeux vidéo classiques. Commandez maintenant et commencez votre collection !" />
+    <link rel="stylesheet" href="style.css" />
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MQPMRZJB');</script>
+<!-- End Google Tag Manager -->
+	<script>
+        console.log("Le script est bien chargé !");
+        document.addEventListener('DOMContentLoaded', function() {
+            // Charger le header
+            fetch('headerfr.html')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erreur lors du chargement du header');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    console.log("Header chargé avec succès !");
+                    document.getElementById('header').innerHTML = data;
+                })
+                .catch(error => console.error(error));
+
+            // Charger le footer
+            fetch('footerfr.html')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erreur lors du chargement du footer');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    console.log("Footer chargé avec succès !");
+                    document.getElementById('footer').innerHTML = data;
+                })
+                .catch(error => console.error(error));
+        });
+    </script>
+</head>
+<boby>
+<div id="header"></div>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <h2>Politique de Confidentialité</h2>       
+	 </div>
+        </div>
+   <p><strong>Dernière mise à jour :</strong> 20/03/2025</p>
+
+    <h2>1. Introduction</h2>
+    <p>La présente Politique de Confidentialité décrit comment <strong>Press Start Cards</strong> collecte, utilise et protège vos données personnelles lors de votre utilisation du site <a href="https://press-start-cards.ovh">https://press-start-cards.ovh</a>.</p>
+
+    <h2>2. Données collectées</h2>
+    <p>Nous collectons les types de données suivants :</p>
+    <ul>
+        <li>Informations personnelles (nom, adresse, téléphone, email) lors de la commande ou de l’inscription à la newsletter.</li>
+        <li>Données de navigation et d'interaction via des cookies et technologies similaires.</li>
+        <li>Données de paiement via notre prestataire <strong>Stripe</strong>.</li>
+    </ul>
+
+    <h2>3. Outils et services utilisés</h2>
+    <p>Nous utilisons les outils suivants pour le suivi, la gestion et l’optimisation de notre site :</p>
+    <ul>
+        <li><strong>Google Analytics 4 (GA4)</strong> et <strong>Google Tag Manager (GTM)</strong> : Analyse du trafic et des comportements des visiteurs.</li>
+        <li><strong>Meta Pixel</strong> et <strong>TikTok Ads</strong> : Suivi des conversions et campagnes publicitaires.</li>
+        <li><strong>Trustpilot</strong> : Gestion des avis clients.</li>
+        <li><strong>Mailchimp</strong> : Gestion de l’email marketing et de la newsletter.</li>
+        <li><strong>Getform</strong> : Collecte des données via les formulaires de contact.</li>
+        <li><strong>Stripe</strong> : Gestion des paiements et de la facturation.</li>
+    </ul>
+
+    <h2>4. Finalités du traitement</h2>
+    <p>Vos données sont utilisées pour :</p>
+    <ul>
+        <li>Traiter vos commandes et paiements.</li>
+        <li>Gérer la relation client et le service après-vente.</li>
+        <li>Envoyer des communications marketing (avec votre consentement).</li>
+        <li>Améliorer l’expérience utilisateur sur notre site.</li>
+        <li>Analyser le trafic et l’efficacité des campagnes publicitaires.</li>
+    </ul>
+
+    <h2>5. Partage des données</h2>
+    <p>Nous ne vendons ni ne louons vos données personnelles. Elles peuvent être partagées uniquement avec :</p>
+    <ul>
+        <li>Nos prestataires techniques et services tiers mentionnés ci-dessus.</li>
+        <li>Les autorités si requis par la loi.</li>
+    </ul>
+
+    <h2>6. Cookies et technologies similaires</h2>
+    <p>Nous utilisons des cookies pour améliorer votre expérience et analyser le trafic. Vous pouvez gérer vos préférences via votre navigateur.</p>
+
+    <h2>7. Sécurité des données</h2>
+    <p>Nous mettons en œuvre des mesures de sécurité pour protéger vos données contre tout accès non autorisé.</p>
+
+    <h2>8. Vos droits</h2>
+    <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+    <ul>
+        <li>Accès, rectification et suppression de vos données.</li>
+        <li>Opposition au traitement de vos données à des fins marketing.</li>
+        <li>Portabilité des données.</li>
+    </ul>
+    <p>Pour exercer vos droits, contactez-nous via le formulaire suivant : <a href="https://www.press-start-cards.ovh/formfr.htm">https://www.press-start-cards.ovh/formfr.htm</a>.</p>
+
+    <h2>9. Modifications</h2>
+    <p>Cette politique peut être mise à jour à tout moment. La version en vigueur est celle publiée sur notre site.</p>
+
+    <hr>
+    <p>En naviguant sur notre site, vous acceptez notre Politique de Confidentialité.</p>
+</body>
+<footer>
+    <!-- Contenu spécifique à la page -->
+    <div id="footer"></div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.slick-slider').slick({
+            infinite: true,
+            slidesToShow: 9,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
+</html>
