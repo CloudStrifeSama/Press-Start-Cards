@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez des critiques de jeux rétro comme jamais auparavant ! Obtenez des boosters mystères remplis de critiques exclusives de jeux vidéo classiques. Commandez maintenant et commencez votre collection !" />
+    <link rel="stylesheet" href="style.css" />
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MQPMRZJB');</script>
+<!-- End Google Tag Manager -->
+	<script>
+        console.log("Le script est bien chargé !");
+        document.addEventListener('DOMContentLoaded', function() {
+            // Charger le header
+            fetch('headerfr.html')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erreur lors du chargement du header');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    console.log("Header chargé avec succès !");
+                    document.getElementById('header').innerHTML = data;
+                })
+                .catch(error => console.error(error));
+
+            // Charger le footer
+            fetch('footerfr.html')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Erreur lors du chargement du footer');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    console.log("Footer chargé avec succès !");
+                    document.getElementById('footer').innerHTML = data;
+                })
+                .catch(error => console.error(error));
+        });
+    </script>
+</head>
+<boby>
+<div id="header"></div>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <h2>Mentions légales</h2>       
+	 </div>
+        </div>
+    <    <p><strong>Dernière mise à jour :</strong> 20/03/2025</p>
+
+    <h2>1. Éditeur du site</h2>
+    <p>Le site <a href="https://press-start-cards.ovh">https://press-start-cards.ovh</a> est édité par :</p>
+    <ul>
+        <li><strong>Press Start Cards</strong></li>
+        <li>Entreprise individuelle de M. Guillaume Girard</li>
+        <li>RCS Blois : 514 076 553</li>
+        <li>Siège social : 20 Route de Moulineuf, 41100 Coulommiers-la-Tour, France</li>
+        <li>Contact : <a href="https://www.press-start-cards.ovh/formfr.htm">Formulaire de contact</a></li>
+    </ul>
+
+    <h2>2. Hébergement</h2>
+    <p>Le site est hébergé sur <strong>GitHub Pages</strong> avec un nom de domaine fourni par <strong>OVH</strong>.</p>
+    <ul>
+        <li>GitHub, Inc.</li>
+        <li>88 Colin P Kelly Jr St, San Francisco, CA 94107, USA</li>
+        <li>Site web : <a href="https://pages.github.com">https://pages.github.com</a></li>
+    </ul>
+
+    <h2>3. Activité et produits</h2>
+    <p>Press Start Cards propose des <strong>articles de presse sous forme de cartes à collectionner</strong>, contenant des critiques de jeux vidéo et des informations sur le rétrogaming.</p>
+    <p>Les visuels des jaquettes de jeux vidéo sont utilisés à titre informatif sous <strong>le droit de citation</strong>, conformément à l’article L122-5 du Code de la propriété intellectuelle.</p>
+
+    <h2>4. Propriété intellectuelle</h2>
+    <p>Toutes les marques, logos et images des jeux vidéo restent la propriété exclusive de leurs ayants droit respectifs.</p>
+    <p>Les contenus rédigés sur les cartes et le site sont la propriété de Press Start Cards et ne peuvent être reproduits sans autorisation.</p>
+    <p>En cas de réclamation pour atteinte aux droits d’auteur, les ayants droit peuvent demander la suppression d’un contenu en fournissant un justificatif de propriété intellectuelle via notre <a href="https://www.press-start-cards.ovh/formfr.htm">formulaire de contact</a>. La demande sera étudiée et traitée dans un délai raisonnable.</p>
+
+    <h2>5. Données personnelles et cookies</h2>
+    <p>Le traitement des données personnelles est détaillé dans notre <a href="politique_confidentialite.html">Politique de Confidentialité</a>. Nous utilisons des outils de suivi tels que Google Analytics 4, Google Tag Manager, Meta Pixel, TikTok Pixel, Trustpilot, Mailchimp et Stripe.</p>
+    <p>Les utilisateurs peuvent gérer leur consentement aux cookies via l’interface dédiée sur notre site.</p>
+
+    <h2>6. Responsabilité</h2>
+    <p>Press Start Cards ne peut être tenu responsable des erreurs dans les critiques publiées ou des éventuelles erreurs typographiques sur les cartes.</p>
+    <p>Les liens externes présents sur le site peuvent rediriger vers des sites tiers dont nous ne contrôlons pas le contenu.</p>
+    <p>Les avis publiés via Trustpilot sont sous la responsabilité de leurs auteurs et sont modérés selon les règles en vigueur de la plateforme.</p>
+
+    <h2>7. Droit applicable et litiges</h2>
+    <p>Les présentes mentions légales sont soumises au droit français. En cas de litige, une tentative de résolution amiable sera privilégiée. À défaut d’accord, la compétence est attribuée aux tribunaux de Blois (41), France.</p>
+</body>
+<footer>
+    <!-- Contenu spécifique à la page -->
+    <div id="footer"></div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.slick-slider').slick({
+            infinite: true,
+            slidesToShow: 9,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 5,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
+</html>
