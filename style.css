@@ -14,6 +14,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 1.6; /* Ajoute un espacement entre les lignes */
 }
 
 h1 {
@@ -213,7 +214,8 @@ footer {
 }
 
 footer > div {
-    margin-bottom: 20px; /* Augmenter l'espacement vertical entre les éléments */
+   margin-bottom: 20px; /* Augmenter l'espacement vertical entre les éléments */
+   line-height: 1.6; /* Ajoute un espacement entre les lignes */
 }
 
 footer div a {
@@ -251,6 +253,7 @@ footer div a {
         flex-direction: row;
         justify-content: space-around;
         text-align: left;
+         line-height: 1.6; /* Ajoute un espacement entre les lignes */
     }
 
     footer > div {
@@ -322,6 +325,7 @@ footer div a {
         flex-direction: column;
         align-items: center;
         text-align: center;
+         line-height: 1.6; /* Ajoute un espacement entre les lignes */
     }
 
     .flag {
