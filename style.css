@@ -110,23 +110,24 @@ h2 {
     background-color: #FFD77A;
 }
 
-/* Conteneur pour l'iframe avec un ratio fixe */
-        .video-container {
-            position: relative;
-            width: 100%;
-            padding-bottom: 56.25%; /* Ratio 16:9 */
-            height: 0;
-            overflow: hidden;
-        }
-
-        iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 50%;
-            height: 50%;
-            border: none;
-        }
+/* Youtube Iframe */
+@media (max-width:478px;) {
+    .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    }
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+}
 
 /* Carousel styles */
 .carousel-container {
