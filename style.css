@@ -110,6 +110,12 @@ h2 {
     background-color: #FFD77A;
 }
 
+/* Responsivité pour la vidéo */
+iframe {
+    width: 100%;
+    height: auto;
+}
+
 /* Carousel styles */
 .carousel-container {
     position: relative;
