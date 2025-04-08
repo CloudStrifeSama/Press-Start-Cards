@@ -120,7 +120,7 @@ h2 {
 }
 
 .video-container iframe {
-    width: 40%; /* La vidéo occupera 40% de la largeur de l'écran */
+    width: 60%; /* La vidéo occupera 40% de la largeur de l'écran */
     height: auto; /* Ajuste automatiquement la hauteur pour conserver les proportions */
     max-width: 700px; /* Largeur maximale pour éviter qu'elle devienne trop grande */
     min-width: 300px; /* Largeur minimale pour les petits écrans */
