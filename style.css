@@ -116,12 +116,16 @@ h2 {
     justify-content: center;
     align-items: center;
     margin: 20px auto;
-    width: 40%; /* 40% de la largeur de l'écran */
+    width: 100%; /* Prend toute la largeur du conteneur */
 }
 
 .video-container iframe {
-    width: 100%;
-    height: auto; /* Maintient les proportions de la vidéo */
+    width: 40%; /* La vidéo occupera 40% de la largeur de l'écran */
+    height: auto; /* Ajuste automatiquement la hauteur pour conserver les proportions */
+    max-width: 700px; /* Largeur maximale pour éviter qu'elle devienne trop grande */
+    min-width: 300px; /* Largeur minimale pour les petits écrans */
+    border: 2px solid #FEBD58; /* Optionnel : ajoute une bordure stylisée */
+    border-radius: 10px; /* Coins arrondis pour un effet élégant */
 }
 
 /* Carousel styles */
