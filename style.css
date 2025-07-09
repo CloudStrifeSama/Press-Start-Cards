@@ -111,21 +111,26 @@ h2 {
 }
 
 /* Youtube Iframe */
+
 .video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px auto;
-    width: 100%; /* Prend toute la largeur du conteneur */
+    position: relative;
+    padding-bottom: 56.25%; /* Format 16:9 */
+    padding-top: 25px;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 30px auto;
 }
 
 .video-container iframe {
-    width: 60%; /* La vidéo occupera 40% de la largeur de l'écran */
-    height: auto; /* Ajuste automatiquement la hauteur pour conserver les proportions */
-    max-width: 700px; /* Largeur maximale pour éviter qu'elle devienne trop grande */
-    min-width: 300px; /* Largeur minimale pour les petits écrans */
-    border: 2px solid #FEBD58; /* Optionnel : ajoute une bordure stylisée */
-    border-radius: 10px; /* Coins arrondis pour un effet élégant */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Tu peux ajuster à 90% ou 100% si tu veux encore plus large */
+    height: 100%;
+    border: 3px solid #FEBD58;
+    border-radius: 10px;
 }
 
 /* Carousel styles */
