@@ -52,24 +52,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <body>
   <div id="header"></div>
 
-  <div class="container">
-    <h2 style="text-align: center;">🎴 1 Booster – 8 Cartes Collector</h2>
+  <div class="container" style="display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap; margin-top: 40px;">
 
-    <div style="max-width: 700px; margin: 0 auto; text-align: center;">
-      <p><strong>Contenu :</strong> 8 cartes aléatoires parmi les <strong>60 existantes</strong>, issues des publications de <strong>juin et juillet</strong>.</p>
-      
-      <p style="margin-top: 1em;"><strong>💡 Quantités ultra limitées :</strong><br>
-      Chaque vente aide à financer les prochaines séries d’<strong>août/septembre</strong>.</p>
-      
-      <p style="margin-top: 1em;"><strong>📦 Expédition rapide :</strong> en moins d'une semaine.</p>
+    <!-- Image produit -->
+    <div style="flex: 0 0 300px; text-align: center;">
+      <img src="img/booster.jpg" alt="Booster Press Start Cards" style="width: 100%; max-width: 300px; border: 2px solid #000;">
+    </div>
 
-      <img src="img/booster.jpg" alt="Booster avec 8 cartes gaming" style="max-width: 100%; height: auto; margin: 1.5em 0; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.2);">
+    <!-- Description + prix + achat -->
+    <div style="flex: 0 0 300px; max-width: 400px;">
+      <h2 style="color: #0055cc; font-size: 1.6em;">1 booster de 8 cartes</h2>
+      <p>
+        1 booster de 8 cartes aléatoire parmi 60<br>
+        collectionnables <strong>(juin – juillet 2025)</strong>
+      </p>
 
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin-top: 1.5em;">
+      <p style="margin-top: 1em;">
+        Frais de ports inclus (France métropolitaine)<br>
+        Livraison sous 72h (jours ouvrés)<br>
+        Paiement sécurisé via <strong>PayPal</strong>
+      </p>
+
+      <p style="font-size: 1.8em; color: #f5a300; margin: 1em 0;">
+        <strong>5 € TTC</strong>
+      </p>
+
+      <!-- Formulaire PayPal -->
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
         <input type="hidden" name="cmd" value="_s-xclick" />
         <input type="hidden" name="hosted_button_id" value="XJY49TVCDPG22" />
         <input type="hidden" name="currency_code" value="EUR" />
-        <input type="image" src="https://www.paypalobjects.com/fr_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal, votre réflexe sécurité pour payer en ligne." alt="Acheter" />
+        <input type="image" src="https://www.paypalobjects.com/fr_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="Payez avec PayPal" alt="Acheter avec PayPal" />
       </form>
     </div>
   </div>
